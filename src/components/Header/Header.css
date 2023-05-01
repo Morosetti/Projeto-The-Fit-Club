@@ -4,5 +4,25 @@
 }
 
 .logo {
-    
+    width: 10rem;
+    height: 3rem;
+    display: inline-block;
+}
+
+.header-menu {
+    list-style: none;
+    display: inline-block;
+    list-style-type: none;
+    gap: 2rem;
+    color: white;
+}
+
+.header-menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-menu>li:hover {
+    color: orange;
+    cursor: pointer;
 }

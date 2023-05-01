@@ -2,3 +2,51 @@
     display: flex;
     justify-content: space-between;
 }
+
+.esquerda-h {
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex:3
+}
+
+.direita-h {
+    flex:1
+}
+
+.propaganda {
+    margin-top: 4rem;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    background-color: #32373b;
+    text-transform: uppercase;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.propaganda>span {
+    z-index: 2;
+}
+
+.propaganda>div {
+    position: absolute;
+    background-color: orange;
+    width: 5.5rem;
+    height: 3.3rem;
+    left: 36px;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: white;
+    text-overflow: inherit;
+}
