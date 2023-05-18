@@ -10,7 +10,9 @@
 }
 
 .direita-h {
-    flex:1
+    flex:1;
+    position: relative;
+    background-color: orange;
 }
 
 .propaganda {
@@ -96,4 +98,82 @@
     background-color: transparent;
     width: 8rem;
     border: 2.3px solid orange;
+}
+
+.direita-h>.btn {
+    position: absolute;
+    right: 3rem;top: 2rem;color: black;
+}
+
+.heart-rate {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #3c3f45;
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+
+.heart-rate>img {
+    width: 2rem;
+}
+
+.heart-rate>:nth-child(2) {
+    color: white;
+}
+
+.heart-rate>:nth-child(3) {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-image {
+    position: absolute;
+    top: 10rem;
+    right: 8rem;
+    width: 23rem;
+}
+
+.hero-image-back {
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.calories {
+    display: flex;
+    gap: 2rem;
+    border-radius: 5px;
+    background-color: var(--caloryCard);
+    padding: 1rem;
+    width: fit-content;
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+}
+
+.calories>img {
+    width: 3rem;
+}
+
+.calories>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div>:nth-child(1) {
+    color: rgb(226, 226, 226);
+}
+
+.calories>div>:nth-child(2) {
+    color: white;
+    font-size: 1.5rem;
 }
