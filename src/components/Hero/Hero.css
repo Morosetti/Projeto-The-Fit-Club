@@ -112,7 +112,7 @@
     background-color: #3c3f45;
     width: fit-content;
     padding: 1rem;
-    align-items: start;
+    align-items: flex-start;
     border-radius: 5px;
     position: absolute;
     right: 4rem;
@@ -134,7 +134,7 @@
 
 .hero-image {
     position: absolute;
-    top: 10rem;
+    top: 9.5rem;
     right: 8rem;
     width: 23rem;
 }
@@ -142,7 +142,7 @@
 .hero-image-back {
     position: absolute;
     top: 4rem;
-    right: 20rem;
+    right: 19rem;
     z-index: -1;
     width: 15rem;
 }
