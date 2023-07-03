@@ -5,8 +5,10 @@ import hero_image from "../../assets/hero_image.png"
 import hero_image_back from "../../assets/hero_image_back.png"
 import Heart from "../../assets/heart.png"
 import Calories from "../../assets/calories.png"
+import { motion } from 'framer-motion'
 
-const Hero = () => {
+function Hero() {
+  const transition = {type: 'spring', duration: 3}
   return (
     <div className="hero">
       <div className="blur hero-blur"></div>
@@ -14,7 +16,7 @@ const Hero = () => {
             <Header/>
             
             <div className="propaganda">
-              <div></div>
+              <motion.div initial = {{left: '228px'}} whileInView={{left: '35px'}} transition={{...transition, type: 'tween'}}></motion.div>
               <span>O melhor club fitness da cidade</span>
             </div>
             <div className="hero-text">
@@ -51,19 +53,19 @@ const Hero = () => {
         <div className="direita-h">
           <button className="btn">Junte-se já</button>
 
-          <div className="heart-rate">
+          <motion.div initial={{right: '-1rem'}} whileInView={{right: '4rem'}} transition={transition} className="heart-rate">
             <img src={Heart} alt="" />
             <span>Heart Rate</span><span>110 bpm</span>
-          </div>
+          </motion.div>
           <img src={hero_image} alt="" className="hero-image" />
-          <img src={hero_image_back} alt="" className="hero-image-back" />
-          <div className="calories">
+          <motion.img initial={{right: '11rem'}} whileInView={{right: '20rem'}} transition={transition} src={hero_image_back} alt="" className="hero-image-back" />
+          <motion.div initial={{right: '37rem'}} whileInView={{right: '28rem'}} transition={transition} className="calories">
             <img src={Calories} alt="" />
             <div>
             <span>Calorias Queimadas</span>
             <span>250 kcal</span>
             </div>
-          </div>
+          </motion.div>
         </div>
     </div>
   )
