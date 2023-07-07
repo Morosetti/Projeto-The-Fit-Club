@@ -88,3 +88,13 @@
 .plano>:nth-child(3) {
     max-width: 110px;
 }
+
+@media screen and (max-width: 768px) {
+    .planos {
+        flex-direction: column;
+    }
+
+    .planos>:nth-child(2) {
+        transform: none;
+    }
+}

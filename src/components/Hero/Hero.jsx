@@ -6,23 +6,25 @@ import hero_image_back from "../../assets/hero_image_back.png"
 import Heart from "../../assets/heart.png"
 import Calories from "../../assets/calories.png"
 import { motion } from 'framer-motion'
+import NumberCounter from 'number-counter'
 
 function Hero() {
-  const transition = {type: 'spring', duration: 3}
+  const transition = {type: 'spring', duration: 3};
+  const mobile = window.innerWidth <= 768 ? true: false;
   return (
-    <div className="hero">
+    <div className="hero" id='home'>
       <div className="blur hero-blur"></div>
         <div className="esquerda-h">
             <Header/>
             
             <div className="propaganda">
-              <motion.div initial = {{left: '228px'}} whileInView={{left: '35px'}} transition={{...transition, type: 'tween'}}></motion.div>
+              <motion.div initial = {{left: mobile? '155px': '228px'}} whileInView={{left: mobile? '5px': '35px'}} transition={{...transition, type: 'tween'}}></motion.div>
               <span>O melhor club fitness da cidade</span>
             </div>
             <div className="hero-text">
               <div>
                 <span className='stroke-text'>Conquiste </span>
-                <span>seu</span>
+                <span className='center-span'>seu</span>
               </div>
               <div>
                 <span>corpo ideal</span>
@@ -33,15 +35,15 @@ function Hero() {
             </div>
             <div className="figuras">
               <div>
-                <span>+140</span>
+                <span><NumberCounter end={140} start={100} delay='4' preFix='+'></NumberCounter></span>
                 <span>Treinadores licenciados</span>
               </div>
               <div>
-                <span>+978</span>
+                <span><NumberCounter end={978} start={746} delay='4' preFix='+'></NumberCounter></span>
                 <span>Membros cadastrados</span>
               </div>
               <div>
-                <span>+50</span>
+                <span><NumberCounter end={50} start={26} delay='4' preFix='+'></NumberCounter></span>
                 <span>Treinos personalizados</span>
               </div>
             </div>

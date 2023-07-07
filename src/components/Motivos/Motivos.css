@@ -85,3 +85,33 @@
 .parceria>img {
     width: 2.5rem;
 }
+
+@media screen and (max-width: 769px) {
+    .Motivos {
+        flex-direction: column;
+    }
+
+    .esquerda-m {
+        grid-auto-rows: auto;
+        overflow: hidden;
+    }
+
+    .esquerda-m>:nth-child(1) {
+        width: 7rem;
+        height: 17rem;
+    }
+
+    .esquerda-m>:nth-child(2) {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .esquerda-m>:nth-child(3) {
+        width: 7rem;
+    }
+
+    .esquerda-m>:nth-child(4) {
+        width: 7rem;
+        height: 6rem;
+    }
+}

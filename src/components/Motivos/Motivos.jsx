@@ -19,7 +19,7 @@ function Motivos() {
                 <img src={image4} alt="" />
                 </div>
             <div className="direita-m">
-                <span>razões</span>
+                <span>Algumas razões do</span>
                 <div>
                     <span className='stroke-text'>porque</span>
                     <span> escolher?</span>
